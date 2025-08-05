@@ -1,0 +1,10 @@
+# Ambiente virtual
+venv/
+pyvenv.cfg
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Banco SQLite
+db.sqlite3
