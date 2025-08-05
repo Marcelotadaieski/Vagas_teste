@@ -31,10 +31,8 @@ class Candidato(models.Model):
         hoje = date.today()
         nasc = self.data_nascimento
         anos = hoje.year - nasc.year
-        # se ainda não fez aniversário neste ano, subtrai 1
         if (hoje.month, hoje.day) < (nasc.month, nasc.day):
             anos -= 1
-        # garante que sempre retornamos um inteiro
         return anos
     
     def __str__(self):

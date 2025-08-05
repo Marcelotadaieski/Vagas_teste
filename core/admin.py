@@ -1,7 +1,5 @@
-# core/admin.py
 from django.contrib import admin
-from .models import Vaga, Candidato     # import relativo
-# ou: from core.models import Vaga, Candidato   # import absoluto
+from .models import Vaga, Candidato   
 
 @admin.register(Vaga)
 class VagaAdmin(admin.ModelAdmin):
